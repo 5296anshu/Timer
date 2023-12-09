@@ -1,45 +1,142 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-	
-<head> 
-	<meta charset="UTF-8"> 
-	<meta http-equiv="X-UA-Compatible"
-		content="IE=edge"> 
-	<meta name="viewport"
-		content="width=device-width, initial-scale=1.0"> 
-	<title>Design Stopwatch using HTML CSS and JavaScript</title> 
-	<link rel="stylesheet" href="style.css"> 
-</head> 
+<!DOCTYPE html>
+<html>
 
-<body> 
-	<div class="container"> 
-		<h1>My stopwatch <br> 
-			Stop Watch</h1>  
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
 
-		<div id="time"> 
-			<span class="digit" id="hr"> 
-				00</span> 
-			<span class="txt">Hr</span> 
-			<span class="digit" id="min"> 
-				00</span> 
-			<span class="txt">Min</span> 
-			<span class="digit" id="sec"> 
-				00</span> 
-			<span class="txt">Sec</span> 
-			<span class="digit" id="count"> 
-				00</span> 
-		</div> 
-		<div id="buttons"> 
-			<button class="btn" id="start"> 
-				Start</button> 
-			<button class="btn" id="stop"> 
-				Stop</button> 
-			<button class="btn" id="reset"> 
-				Reset</button> 
-		</div> 
-	</div> 
+</head>
 
-	<script src="script.js"></script> 
-</body> 
-	
+<body>
+
+	<h2 style="text-align:center">Multiple Slideshows</h2>
+
+	<p>Slideshow 1:</p>
+	<div class="slideshow-container">
+		<div class="mySlides2">
+			<img src="https://unsplash.com/photos/a-person-jumping-into-the-air-at-sunset-urBne08-lTQ"
+				style="width:100%">
+		</div>
+
+		<div class="mySlides2">
+			<img src="https://unsplash.com/photos/a-blurry-photo-of-a-city-street-at-night-49lzNhusxSg"
+				style="width:100%">
+		</div>
+
+		<div class="mySlides2">
+			<img src="https://unsplash.com/photos/a-man-standing-next-to-a-truck-with-a-camper-on-it-dA_6i8Kg0xM"
+				style="width:100%">
+		</div>
+		<div class="mySlides2">
+			<img src="https://unsplash.com/photos/a-man-standing-next-to-a-truck-with-a-camper-on-it-dA_6i8Kg0xM"
+				style="width:100%">
+		</div>
+
+		<div class="mySlides2">
+			<img src="https://unsplash.com/photos/a-black-background-with-blue-and-white-lines-uB677B6oXxU"
+				style="width:100%">
+		</div>
+
+		<div class="mySlides2">
+			<img src="https://unsplash.com/photos/a-person-swimming-in-the-ocean-surrounded-by-fish-4K_x--J2Jbc"
+				style="width:100%">
+		</div>
+		<div class="mySlides2">
+			<img src="https://unsplash.com/photos/a-man-riding-a-bike-down-a-street-next-to-a-bridge-pYffZ7Ak_zE"
+				style="width:100%">
+		</div>
+
+		<div class="mySlides2">
+			<img src="https://unsplash.com/photos/a-man-standing-next-to-a-tent-in-the-desert-p4q-Ra__g8M"
+				style="width:100%">
+		</div>
+
+		<div class="mySlides2">
+			<img src="https://unsplash.com/photos/a-body-of-water-sitting-next-to-a-beach-under-a-cloudy-sky-pFbM-SUV_50"
+				style="width:100%">
+		</div>
+		<div class="mySlides2">
+			<img src="https://unsplash.com/photos/a-large-clock-tower-towering-over-the-city-of-london-FvFn9MY2tjA"
+				style="width:100%">
+		</div>
+
+		<div class="mySlides2">
+			<img src="https://unsplash.com/photos/a-woman-standing-on-a-bridge-with-a-city-in-the-background-k69FQ4Qs1S8"
+				style="width:100%">
+		</div>
+
+		<div class="mySlides2">
+			<img src="https://unsplash.com/photos/a-bird-flying-over-a-beach-next-to-the-ocean-cHbnw8CdAiE"
+				style="width:100%">
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+	</div>
+
+	<p>Slideshow 2:</p>
+	<div class="slideshow-container">
+		<div class="mySlides2">
+			<img src="https://unsplash.com/photos/a-person-jumping-into-the-air-at-sunset-urBne08-lTQ"
+				style="width:100%">
+		</div>
+
+		<div class="mySlides2">
+			<img src="https://unsplash.com/photos/a-blurry-photo-of-a-city-street-at-night-49lzNhusxSg"
+				style="width:100%">
+		</div>
+
+		<div class="mySlides2">
+			<img src="https://unsplash.com/photos/a-man-standing-next-to-a-truck-with-a-camper-on-it-dA_6i8Kg0xM"
+				style="width:100%">
+		</div>
+		<div class="mySlides2">
+			<img src="https://unsplash.com/photos/a-man-standing-next-to-a-truck-with-a-camper-on-it-dA_6i8Kg0xM"
+				style="width:100%">
+		</div>
+
+		<div class="mySlides2">
+			<img src="https://unsplash.com/photos/a-black-background-with-blue-and-white-lines-uB677B6oXxU"
+				style="width:100%">
+		</div>
+
+		<div class="mySlides2">
+			<img src="https://unsplash.com/photos/a-person-swimming-in-the-ocean-surrounded-by-fish-4K_x--J2Jbc"
+				style="width:100%">
+		</div>
+		<div class="mySlides2">
+			<img src="https://unsplash.com/photos/a-man-riding-a-bike-down-a-street-next-to-a-bridge-pYffZ7Ak_zE"
+				style="width:100%">
+		</div>
+
+		<div class="mySlides2">
+			<img src="https://unsplash.com/photos/a-man-standing-next-to-a-tent-in-the-desert-p4q-Ra__g8M"
+				style="width:100%">
+		</div>
+
+		<div class="mySlides2">
+			<img src="https://unsplash.com/photos/a-body-of-water-sitting-next-to-a-beach-under-a-cloudy-sky-pFbM-SUV_50"
+				style="width:100%">
+		</div>
+		<div class="mySlides2">
+			<img src="https://unsplash.com/photos/a-large-clock-tower-towering-over-the-city-of-london-FvFn9MY2tjA"
+				style="width:100%">
+		</div>
+
+		<div class="mySlides2">
+			<img src="https://unsplash.com/photos/a-woman-standing-on-a-bridge-with-a-city-in-the-background-k69FQ4Qs1S8"
+				style="width:100%">
+		</div>
+
+		<div class="mySlides2">
+			<img src="https://unsplash.com/photos/a-bird-flying-over-a-beach-next-to-the-ocean-cHbnw8CdAiE"
+				style="width:100%">
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+	</div>
+	<script src="script.js"></script>
+</body>
+
 </html>
