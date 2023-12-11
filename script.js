@@ -1,19 +1,41 @@
-let slideIndex = 0;
-showSlides();
 
-function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+var mins = .1;
+var secs = mins * 60;
+function countdown() {
+    setTimeout('Decrement()', 60);
+}
+function Decrement() {
+    if (document.getElementById) {
+        minutes = document.getElementById("minutes");
+        seconds = document.getElementById("seconds");
+        if (seconds < 59) {
+            seconds.value = secs;
+        }
+        else {
+            minutes.value = getminutes();
+            seconds.value = getseconds();
+        }
+        if (mins < 1) {
+            minutes.style.color = "red";
+            seconds.style.color = "red";
+        }
+        if (mins < 0) {
+            alert('time up');
+            minutes.value = 0;
+            seconds.value = 0;
+        }
+        else {
+            secs--;
+            setTimeout('Decrement()', 1000);
+        }
     }
-    slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1 }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+function getminutes() {
+    mins = Math.floor(secs / 60);
+    return mins;
+}
+
+function getseconds() {
+    return secs - Math.round(mins * 60);
 }
